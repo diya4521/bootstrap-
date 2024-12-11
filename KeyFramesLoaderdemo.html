@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames Loader</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .loader{
+            -border: 1px solid red;
+            height: 100vh;
+            background-color: #000;
+        }
+        .inner-loader{
+            width: 10px;height: 40px;
+            background-color: red;
+            animation: loading 3.5s ease-in-out infinite;
+        }
+
+        .inner-loader1{
+            animation-delay: 0s;
+        }
+        .loader2{
+            animation-delay: 0.5s;
+        }
+        .loader3{
+            animation-delay: 1s;
+        }
+        .loader4{
+            animation-delay: 1.5s;
+        }
+        .loader5{
+            animation-delay: 2s;
+        }
+        .loader6{
+            animation-delay: 2.5s;
+        }
+        .loader7{
+            animation-delay: 3s;
+        }
+
+        @keyframes loading {
+            0%{
+
+            }
+
+            20%{
+                transform: translateY(-10px);
+                background-color: yellow;
+            }
+
+            50%{
+                transform: translateY(0);
+                background-color: chartreuse;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="loader d-flex gap-2 justify-content-center align-items-center">
+        <div class="inner-loader loader1"></div>
+        <div class="inner-loader loader2"></div>
+        <div class="inner-loader loader3"></div>
+        <div class="inner-loader loader4"></div>
+        <div class="inner-loader loader5"></div>
+        <div class="inner-loader loader6"></div>
+        <div class="inner-loader loader7"></div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

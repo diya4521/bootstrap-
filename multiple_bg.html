@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of Multiple BG</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .box {
+        -border: 1px solid red;
+        height: 400px;
+        background-image: url(images/flower.webp), url(/images/bg.jfif);
+        background-repeat: no-repeat, repeat;
+        background-size: 150px, cover;
+        background-position: left bottom, center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

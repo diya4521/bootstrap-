@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Text</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: #fbe5cd;
+        overflow-x: hidden;
+      }
+
+      .header {
+        -border: 1px solid red;
+        padding: 20px;
+        background-color: rgba(61, 87, 87, 0.099);
+        color: #e69138;
+      }
+
+      p {
+        color: #351c75;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Attention seekers-->
+
+    <div class="header">Attention seekers Animations</div>
+
+    <p class="" id="ba1">Bounce Animate</p>
+    <p class="" id="ba2">Flash Animate</p>
+    <p class="pluse animate__animated animate__pulse">Pluse Animate</p>
+    <p class="rubberBand animate__animated animate__rubberBand">
+      RubberBand Animate
+    </p>
+    <p class="shakeX animate__animated animate__shakeX">ShakeX Animate</p>
+    <p class="ShakeY animate__animated animate__shakeY">ShakeY Animate</p>
+    <p class="headShake animate__animated animate__headShake">
+      HeadShake Animate
+    </p>
+    <p class="swing animate__animated animate__swing">Swing Animate</p>
+    <p class="tada animate__animated animate__tada">Tada Animate</p>
+    <p class="wobble animate__animated animate__wobble">Wobble Animate</p>
+    <p class="jello animate__animated animate__jello">Jello Animate</p>
+    <p class="heartBeat animate__animated animate__heartBeat">
+      HeartBeat Animate
+    </p>
+
+    <!--Back entrances-->
+
+    <div class="header">Back Entrances Animates</div>
+
+    <p class="backInDown animate__animated animate__backInDown">
+      BackInDown Animate
+    </p>
+    <p class="backInLeft animate__animated animate__backInLeft">
+      BackInLeft Animate
+    </p>
+    <p class="backInRight animate__animated animate__backInRight">
+      BackInRight Animate
+    </p>
+    <p class="backInUp animate__animated animate__backInUp">BackInUp Animate</p>
+
+    <!-- Back exits
+
+      <div class="header">Back Exits Animates</div>
+
+      <p class="backOutDown animate__animated animate__backOutDown">
+        BackOutDown Animate
+      </p>
+      <p class="backOutLeft animate__animated animate__backOutLeft">
+        BackOutLeft Animate
+      </p>
+      <p class="backOutRight animate__animated animate__backOutRight">
+        BackOutRight Animate
+      </p>
+      <p class="backOutUp animate__animated animate__backOutUp">
+        BackOutUp Animate
+      </p> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#ba1").mouseenter(function () {
+        $("#ba1").addClass("bounce animate__animated animate__bounce");
+      });
+      $("#ba1").mouseout(function () {
+        $("#ba1").removeAttr("claSS");
+      });
+
+
+      $("#ba2").mouseenter(function () {
+        $("#ba2").addClass("flash animate__animated animate__flash");
+      });
+      $("#ba2").mouseout(function () {
+        $("#ba2").removeAttr("claSS");
+      });
+    </script>
+  </body>
+</html>

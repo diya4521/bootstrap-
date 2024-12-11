@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of Owl Carousel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css//owl.theme.default.min.css" />
+    <style>
+      .item {
+        border: 1px solid #ddd;
+        -height: 200px;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .item img {
+        width: 100px !important;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      .owl-theme .owl-dots .owl-dot.active span {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="https://images.unsplash.com/photo-1535615615570-3b839f4359be?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG15JTIwaGVhcnR8ZW58MHx8MHx8fDA%3D"
+            width="100"
+            height="100"
+            alt=""
+          />
+          <h5>My Heart Pictures</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo
+            reiciendis perferendis laudantium voluptatibus iure.
+          </p>
+          <button class="btn btn-primary">View More</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+            alt=""
+            height="100"
+            width="100"
+          />
+          <h5>Software Photos</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo
+            reiciendis perferendis laudantium voluptatibus iure.
+          </p>
+          <button class="btn btn-primary">View More</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://th.bing.com/th/id/OIG2.9O4YqGf98tiYzjKDvg7L"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h5>Creator in Bing</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo
+            reiciendis perferendis laudantium voluptatibus iure.
+          </p>
+          <button class="btn btn-primary">View More</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://w7.pngwing.com/pngs/678/302/png-transparent-silhouette-of-womens-friendship-day-woman-female-organization-ladies-night-love-people-friendship.png"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h5>friend's</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo
+            reiciendis perferendis laudantium voluptatibus iure.
+          </p>
+          <button class="btn btn-primary">View More</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/04/16/44/barberry-8612696_640.jpg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h5>Beautiful Wallpaper</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo
+            reiciendis perferendis laudantium voluptatibus iure.
+          </p>
+          <button class="btn btn-primary">View More</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        stagePadding: 100,
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        center: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: "URLHash",
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

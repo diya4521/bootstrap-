@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .btn{
+            background:linear-gradient(90deg, #031627 -20%, #4869B1 115%);
+        }
+        .btn:hover{
+            background:linear-gradient(90deg, #4869B1 -20%  ,#031627 115%);
+        }
+        i{
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-sm bg-white shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="https://cdn24.tcpindia.in/images/Site/logo/03c93b.png" width="70" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-nav "> 
+                    <li class="nav-item"><a href="#" class="btn btn-sm rounded-pill px-3 ms-4 text-white "> <i class="fa-regular fa-user"></i>Student Login </a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

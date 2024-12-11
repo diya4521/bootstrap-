@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of Gradient</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .boxlorem {
+        border: 1px solid red;
+        width: 100%;
+        /* white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; */
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 5px solid;
+        margin: 50px auto;
+        border-image-slice: 1;
+        -border-width: 5px;
+      }
+      .gradient-blue {
+        border-image-source: linear-gradient(to left, blue, green, pink);
+      }
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        background: linear-gradient(to top, red, green, blue);
+        -webkit-background-clip: text;
+        /* -webkit-text-fill-color: transparent; */
+        -webkit-text-stroke: 5px transparent;
+        color: #fff;
+      }
+
+      .gradient-orange {
+        border-image-source: linear-gradient(to right, orange, maroon);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxlorem">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+      maxime, facilis consequuntur voluptas magni illum labore blanditiis cumque
+      ullam omnis asperiores velit veniam nobis voluptate recusandae repudiandae
+      dicta commodi quasi! Cum ipsa distinctio,Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Provident maxime, facilis consequuntur
+      voluptas magni illum labore blanditiis cumque ullam omnis asperiores velit
+      veniam nobis voluptate recusandae repudiandae dicta commodi quasi! Cum
+      ipsa distinctio,Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Provident maxime, facilis consequuntur voluptas magni illum labore
+      blanditiis cumque ullam omnis asperiores velit veniam nobis voluptate
+      recusandae repudiandae dicta commodi quasi! Cum ipsa distinctio,Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Provident maxime,
+      facilis consequuntur voluptas magni illum labore blanditiis cumque ullam
+      omnis asperiores velit veniam nobis voluptate recusandae repudiandae dicta
+      commodi quasi! Cum ipsa distinctio,Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Provident maxime, facilis consequuntur voluptas magni
+      illum labore blanditiis cumque ullam omnis asperiores velit veniam nobis
+      voluptate recusandae repudiandae dicta commodi quasi! Cum ipsa distinctio,
+    </div>
+    <div class="box gradient-blue"></div>
+    <h1>India is my country</h1>
+    <div class="box gradient-orange"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
